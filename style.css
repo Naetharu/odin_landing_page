@@ -1,0 +1,243 @@
+/* 
+
+Table of Contents 
+
+#1: Colors
+
+#2: Global Styles
+    2.1 * 
+    2.2 html, body
+    2.3 body
+
+#3 Typography
+
+
+#4 Layout
+
+
+*/
+
+/*#1 Colors */
+
+:root {
+  --dark-background: #1f2937;
+  --white: #f9faf8;
+  --grey: #e5e7eb;
+  --blue: #3882f6;
+}
+
+/*#2 Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Play", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #202020;
+}
+
+/* Typography */
+
+.logo-text {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.title-text {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.secondary-text {
+  font-size: 1.125rem;
+  color: var(--grey);
+}
+
+.information-header {
+  font-size: 2.25rem;
+  color: var(--dark-background);
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: lighter;
+}
+
+/* Components */
+
+.btn {
+  background-color: var(--blue);
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.2rem 1.6rem;
+  border-radius: 8px;
+  color: var(--white);
+  margin: 0.6rem 0;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+/* Layout */
+/* Content Wrapper */
+.content-wrapper {
+  background-color: var(--dark-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section One */
+.sec-one {
+  padding: 0.2rem 14rem;
+}
+
+/* Top Navigation */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Content */
+
+.sec-one-content {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.sec-one-title {
+  width: 22rem;
+  line-height: 2.8rem;
+}
+
+.sec-one-text {
+  width: 29rem;
+  padding: 0.2rem 0;
+  line-height: 1.5rem;
+}
+
+.sec-one-img {
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Two */
+
+.sec-two {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.sec-two-title {
+  margin: 2rem 0;
+}
+
+.sec-two-content {
+  display: flex;
+}
+
+.content-box {
+  width: 16rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.content-box-img {
+  width: 16rem;
+  height: 16rem;
+  border: 3px solid var(--blue);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box-text {
+  color: var(--dark-background);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* Section Three */
+.sec-three {
+  background-color: var(--grey);
+  padding: 8rem 30rem;
+}
+
+.citation {
+  float: right;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+/* Section Four */
+
+.sec-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.sec-four-content {
+  background-color: var(--blue);
+  margin: 8rem 12rem;
+  padding: 6rem 14rem;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-btn {
+  border: 2px solid white;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  color: var(--white);
+}
