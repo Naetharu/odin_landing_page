@@ -200,12 +200,19 @@ body {
 /* Section Three */
 .sec-three {
   background-color: var(--grey);
-  padding: 8rem 30rem;
+  padding: 8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-text {
+  max-width: 60rem;
 }
 
 .citation {
   float: right;
-  margin: 1rem 0;
+  margin: 1rem;
   font-weight: bold;
 }
 
@@ -240,4 +247,97 @@ footer {
   align-items: center;
   padding: 4rem;
   color: var(--white);
+}
+
+/* MEDIA QUERIES */
+/* TABLET VIEW @ sub 1100px wide */
+
+@media only screen and (max-width: 1100px) {
+  /* Section 1 */
+
+  .sec-one {
+    padding: 0.2rem 1rem;
+  }
+
+  /* Content */
+
+  .sec-one-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec-one-content-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-one-title {
+    width: 100%;
+  }
+
+  .sec-one-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .sec-one-img {
+    height: 10rem;
+    width: 90%;
+  }
+
+  /* Section 2 */
+
+  .sec-two {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .sec-two-title {
+    margin: 0 0;
+    text-align: center;
+  }
+
+  .sec-two-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-box {
+    width: 16rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  /* Section 3 */
+
+  .sec-three {
+    padding: 8rem 2rem;
+  }
+
+  /* Section 4 */
+
+  .sec-four-content {
+    background-color: var(--blue);
+    margin: 2rem 2rem;
+    padding: 2rem 6rem;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .action-btn {
+    border: 2px solid white;
+  }
 }
